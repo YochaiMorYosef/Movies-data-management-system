@@ -1,0 +1,6 @@
+{
+    "users": [
+        { "userName": "yochai", "password": "2", "createdDate": "15/02/2022", "credits": 20, "isAdmin": 1 },
+        { "userName": "gal", "password": "1", "createdDate": "15/02/2022", "credits": 20, "isAdmin": 0 }
+    ]
+}

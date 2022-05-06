@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <a href="http://localhost:3000/users">
+        <button class="btn btn-outline-light">Back to Login</button>
+    </a>
+    <br><br>
+    <h1>Menu Page</h1>
+    <form action="/users/search" method="post">
+        <button id="searchMoviePage">Search movie page</button><br />
+    </form>
+
+    <form action="/users/newMoviePage" method="post">
+        <button id="createMoviePage">create movie page</button><br />
+    </form>
+    <% if(data=="hidden"){%>
+        <form action="/login/editUsers" method="post">
+            <button id="editUsers" style="visibility: hidden">edit users</button
+      ><br />
+    </form>
+    <%} else{%>
+    <form action="/login/editUsers" method="post">
+      <button id="editUsers" style="visibility: visible">edit users</button
+      ><br />
+    </form>
+    <%}%>
+  </body>
+</html>

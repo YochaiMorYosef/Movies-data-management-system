@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        .h1Title {
+            text-align: center;
+            font-size: 2rem;
+            color: #fff;
+            text-shadow: 2px 3px 1px rgba(202, 139, 22, 0.787);
+            background-color: #000000e7;
+            border-radius: 10rem;
+        }
+        
+        td {
+            text-align: center;
+            border: 1px solid rgba(0, 0, 0, 0.767);
+            color: rgb(0, 0, 0);
+            width: 200px;
+            height: 18px;
+        }
+        
+        .td1 {
+            width: 200px;
+            height: 28px;
+            font-size: 1.4rem;
+            color: ghostwhite;
+            background-color: rgb(1, 1, 2);
+        }
+        
+        table {
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="http://localhost:3000/users">
+        <button class="btn btn-outline-light">Back to Login</button>
+    </a>
+    <br>
+    <form action="/users/moviedata" method="post">
+
+        <h1 class="h1Title">Movie's Data</h1><br><br>
+        <center>
+
+            <table>
+
+                <tr>
+                    <td class="td1">ID</td>
+                    <td>
+                        <%=data.id%>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td1">Name</td>
+                    <td>
+                        <%=data.name%>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td1">Genre</td>
+                    <td>
+                        <%=data.genres%>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td1">Language</td>
+                    <td>
+                        <%=data.language%>
+                    </td>
+                </tr>
+
+            </table><br><br>
+            <button>Movie's Data</button>
+    </form><br><br>
+    <a href="http://localhost:3000/users/search">
+        <h4>Menu Page</h4>
+    </a>
+    </center>
+
+</body>
+
+</html>
