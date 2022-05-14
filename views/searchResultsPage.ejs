@@ -67,16 +67,16 @@
                                             <br>
                                             <% });%>
                                                 <% dataJson.name.forEach(function(x){ %>
-                                                    <input type="radio" name="name" value="<%=x%>">
-                                                    <%=x%> <br>
-                                                        <% });%>
+                                                    <button name="name" class="btn btn-outline-light" value="<%=x%>">
+                                                    <%=x%></button> <br>
+                                                    <% });%>
 
                                     </td>
                                     <td>
                                         <% sameData.name.forEach(function(x){ %>
-                                            <input type="radio" name="name" value="<%=x%>">
-                                            <%=x%> <br>
-                                                <% });%>
+                                            <button name="name" class="btn btn-outline-light" value="<%=x%>">
+                                                <%=x%></button> <br>
+                                            <% });%>
                                     </td>
                                 </tr>
                             </tbody>
