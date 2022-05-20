@@ -169,7 +169,7 @@ let getSpecificMovieDataAPI = async(req_body) => {
     let finalData = data.data;
 
     // if (req_body.name)
-    finalData = finalData.filter(x => x.name == req_body.name)
+    finalData = finalData.find(x => x.name == req_body.name)
 
 
     return finalData;

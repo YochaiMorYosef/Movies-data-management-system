@@ -61,8 +61,9 @@ router.post('/moviedata', async function(req, res, next) {
     let resultsFromJson = await moviesBL.getSpecificMovieDataJF(req.body)
 
     console.log(resultsFromApi)
-    console.log(resultsFromApi.length)
+        // console.log(resultsFromApi.length)
     console.log(resultsFromJson)
+        //  console.log(resultsFromJson.length)
     if (resultsFromJson === undefined)
         res.render('movieDataPage', { data: resultsFromApi });
     if (resultsFromApi === undefined)
